@@ -1,0 +1,112 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: 10% auto 20%;
+	grid-gap: 10px;
+
+}
+
+.grid-container > div{
+	font: size 30px;
+	text-align: 30px;
+}
+
+
+#header{
+	grid-column: 1/span 3;
+	text-align: center;
+	background-color:rgb(255, 232, 219);
+    color: rgb(255, 162, 118);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(255, 167, 67);
+}
+
+#main2{	
+	grid-column: 2/span 1;
+	background-color:rgb(255, 232, 219);
+    color: rgb(255, 162, 118);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(255, 167, 67);;
+}
+
+
+#footer{grid-column: 1/span 3;
+	background-color:rgb(255, 232, 219);
+    color: rgb(255, 162, 118);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(255, 167, 67);;
+
+}
+
+#cinnamon{ width: 100%;}
+#cinnamon2{width: 100%;}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto 20%;
+		grid-gap: 10px;
+	
+	}
+
+	#header
+	{grid-column: 1/span 2;
+	background-color:rgb(255, 232, 219);
+    color: rgb(255, 162, 118);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(255, 167, 67);;
+	}
+
+
+	#main1{	grid-column: 1/span 2;}
+	#main2{	grid-column: 1/span 1;}
+	#right{	grid-column: 2/span 1;}
+	#footer{grid-column: 1/span 2;}
+	#cinnamon{  width: 100%; margin-top: 20px;}
+}
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto;
+		grid-gap: 10px; 
+	}
+
+	#header{
+	grid-column: 1/span 1; 
+    color: rgb(255, 162, 118);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin-left: 20px;
+    margin-right: 1000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 10px solid rgb(255, 167, 67);;
+    margin: auto;
+	}    
+	#main1{	grid-column: 1/span 1;}
+	#main2{	grid-column: 1/span 1; }
+	#right{	grid-column: 1/span 1;}
+	#footer{grid-column: 1/span 1;
+	
+	
+	}
+	#cinnamon{ width: 100%;}
+	#cinnamon2{width: 100%;}
+}
+
+h2
+{
+	margin-left: 15px;
+}
+
+body
+{
+	background-color:rgb(255, 208, 107);
+}
